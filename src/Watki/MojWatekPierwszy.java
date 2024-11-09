@@ -8,4 +8,6 @@ public class MojWatekPierwszy implements Runnable{
             System.out.println("Watek pierwszy: " + i);
         }
     }
+
+
 }
