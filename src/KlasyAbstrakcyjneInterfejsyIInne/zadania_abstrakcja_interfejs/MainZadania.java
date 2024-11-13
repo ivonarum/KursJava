@@ -1,5 +1,7 @@
 package KlasyAbstrakcyjneInterfejsyIInne.zadania_abstrakcja_interfejs;
 
+import KlasyAbstrakcyjneInterfejsyIInne.MainKlasaAnonimowa;
+
 public class MainZadania {
     public static void main(String[] args) {
 //        Zadanie 2
@@ -17,12 +19,29 @@ public class MainZadania {
         System.out.println("Pole koła: " + kolo1.pole());
         System.out.println("Obwód prostokąta: " + prostokat1.obwod());
         System.out.println("Pole prostokąta: " + prostokat1.pole());
+
+        System.out.println();
+        System.out.println("Zadanie 3");
+        //Zadanie 3
+        //Stwórz interfejs wewnętrzny o nazwie "Info" z metodą “wyswietlInfo” w klasie,
+        // w której masz metodę main. Przećwiczyć tworzenie klasy anonimowej tworząc ją w
+        // metodzie main i przesłoń metodę tak, aby wypisywała tekst “informacja wypisana
+        // z klasy anonimowej”. Następnie wywołaj tę metodę “wyswietlInfo”
+        // i sprawdź czy prawidłowo została stworzona klasa anonimowa.
+
+        interface Info {
+            void wyswietlInfo();
+        }
+
+Info obiektInfo = new Info() {
+    @Override
+    public void wyswietlInfo() {
+        System.out.println("informacja wypisana z klasy anonimowej");
+    }
+};
+        obiektInfo.wyswietlInfo();
+
+    }
     }
 
-    //Zadanie 3
-    //Stwórz interfejs wewnętrzny o nazwie "Info" z metodą “wyswietlInfo” w klasie,
-    // w której masz metodę main. Przećwiczyć tworzenie klasy anonimowej tworząc ją w
-    // metodzie main i przesłoń metodę tak, aby wypisywała tekst “informacja wypisana
-    // z klasy anonimowej”. Następnie wywołaj tę metodę “wyswietlInfo”
-    // i sprawdź czy prawidłowo została stworzona klasa anonimowa.
-}
+
