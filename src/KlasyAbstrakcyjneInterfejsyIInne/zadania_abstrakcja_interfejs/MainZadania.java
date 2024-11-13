@@ -29,19 +29,20 @@ public class MainZadania {
         // z klasy anonimowej”. Następnie wywołaj tę metodę “wyswietlInfo”
         // i sprawdź czy prawidłowo została stworzona klasa anonimowa.
 
-        interface Info {
-            void wyswietlInfo();
-        }
 
-Info obiektInfo = new Info() {
-    @Override
-    public void wyswietlInfo() {
-        System.out.println("informacja wypisana z klasy anonimowej");
-    }
-};
+        Info obiektInfo = new Info() {
+            @Override
+            public void wyswietlInfo() {
+                System.out.println("informacja wypisana z klasy anonimowej");
+            }
+        };
         obiektInfo.wyswietlInfo();
 
     }
+
+    interface Info {
+        void wyswietlInfo();
     }
+}
 
 

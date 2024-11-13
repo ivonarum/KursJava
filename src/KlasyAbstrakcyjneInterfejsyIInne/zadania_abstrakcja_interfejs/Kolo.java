@@ -9,11 +9,11 @@ public class Kolo implements Figury {
 
     @Override
     public double obwod() {
-        return 3.14 * r * 2;
+        return Math.PI * r * 2;
     }
 
     @Override
     public double pole() {
-        return 3.14 * r * r;
+        return Math.PI * Math.pow(r,2);
     }
 }

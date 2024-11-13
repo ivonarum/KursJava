@@ -10,7 +10,7 @@ private double b;
 
     @Override
     public double obwod() {
-        return 2 * a + 2*b;
+        return 2 * (a + b);
     }
 
     @Override
