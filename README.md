@@ -1,0 +1,7 @@
+- składnie języka Java
+- zmienne, operatory, tablice
+- instrukcje warunkowe, pętle
+- klasy, klasy abstrakcyjne, klasy anonimowe, klasy wewnętrzne, interfejsy
+- paradygmaty programowania obiektowego, czyli dobry praktyki
+- wyjątki, wątki, wczytywanie/zapisywanie danych
+- interfejs graficzny użytkownika (GUI) tworząc aplikację okienkową
