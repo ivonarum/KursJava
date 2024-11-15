@@ -8,7 +8,7 @@ public class MainWatkiZadania {
 //        - wystartuj wątek pamiętając o odpowiednich czynnościach
 //                - dopisz, aby informacja została wyświetlona z 3 sekundowym opóźnieniem
 
-        // tworzenie klasy anonimowej z wątkiem:
+        // ---------tworzenie klasy anonimowej z wątkiem:------------------------
         Runnable runnableAnonimowe = new Runnable() {
             @Override
             public void run() {
@@ -20,7 +20,7 @@ public class MainWatkiZadania {
                 System.out.println("Ta informacja została wypisana z klasy anonimowej i z mojego wątku");
             }
         };
-//        WatekZadanie1 watekZadanie1 = new WatekZadanie1();
+
         Thread thread1 = new Thread(runnableAnonimowe);
         thread1.start();
 
