@@ -9,7 +9,7 @@ public class MainZadania {
 //“Jestem <imię> <nazwisko> i mam <wzrost> cm wzrostu”
         Scanner scanner = new Scanner(System.in);
 
-//        String imie;
+//      String imie;
 //        String nazwisko;
 //        int wzrost;
 //        System.out.println("Podaj imie:");
@@ -24,8 +24,8 @@ public class MainZadania {
         //Wczytuj z klawiatury dane do momentu napotkania małego ‘x’ bądź dużego ‘X’.
         // Wypisuj na ekran teksty, które są oddzielane średnikiem ';'
 
-        System.out.println("Wprowadź tekst...");
-//        scanner.useDelimiter(";");
+//        System.out.println("Wprowadź tekst...");
+//        scanner.useDelimiter("\n");
 //
 //        while (true) {
 //            String next = scanner.next();
@@ -37,21 +37,25 @@ public class MainZadania {
 //        scanner.close();
 //        System.out.println("Zakonczylem swoje dzialanie");
 
-        //Zadanie 3
-        //Wczytaj całą linię tekstu z klawiatury. Następnie pobierz liczbę.
-        // Wypisz na ekran wczytaną linię tyle razy ile wynosi podana liczba
+        System.out.println("Zadanie 3");
+//        Wczytaj całą linię tekstu z klawiatury. Następnie pobierz liczbę.
+//         Wypisz na ekran wczytaną linię tyle razy ile wynosi podana liczba
 
 //String linia = scanner.nextLine();
 //int liczba = scanner.nextInt();
 //for(int i = 1; i<= liczba; i++) {
 //   System.out.println(linia);
 //}
-
+        System.out.println("Zadanie 4");
         //Zadanie 4
-        //Wczytuj liczby i licz ich sumę. Zakończ działanie w momencie napotkania liczby ujemnej
+        //Wczytuj int liczby i licz ich sumę. Zakończ działanie w momencie napotkania liczby ujemnej
+int suma =0;
+int liczba;
+        while((liczba = scanner.nextInt()) >= 0) {
 
-           int liczba = scanner.nextInt();
-            System.out.println("wczytane: " + liczba);
+            suma += liczba;
+        }
+        System.out.println("wczytane: " + suma);
 
     }
 }
