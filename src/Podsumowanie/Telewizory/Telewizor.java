@@ -1,4 +1,4 @@
-package Podsumowanie;
+package Podsumowanie.Telewizory;
 
 public interface Telewizor {
 

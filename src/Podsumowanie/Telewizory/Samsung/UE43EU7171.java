@@ -1,4 +1,4 @@
-package Podsumowanie;
+package Podsumowanie.Telewizory.Samsung;
 
 public class UE43EU7171 extends TelewizorSamsung {
 
@@ -10,7 +10,7 @@ public class UE43EU7171 extends TelewizorSamsung {
     private String usb2;
 
 
-    protected UE43EU7171(String id) {
+    public UE43EU7171(String id) {
         super(43);
     }
 }

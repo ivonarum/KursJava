@@ -1,12 +1,14 @@
-package Podsumowanie;
+package Podsumowanie.Telewizory.Samsung;
 
-public class TelewizorSamsung implements Telewizor{
+import Podsumowanie.Telewizory.Telewizor;
+
+public abstract class TelewizorSamsung implements Telewizor {
 
     private boolean stanWlaczony = false;
     private int numerKanalu = 1;
     private int cale;
 
-    protected TelewizorSamsung(int cale) {
+    public TelewizorSamsung(int cale) {
         this.cale = cale;
     }
 
@@ -29,7 +31,7 @@ public class TelewizorSamsung implements Telewizor{
                     }
                 }
             }
-        });
+        }).start();
     }
 
     @Override
