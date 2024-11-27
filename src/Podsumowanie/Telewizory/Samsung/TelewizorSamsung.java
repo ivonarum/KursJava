@@ -47,4 +47,12 @@ public abstract class TelewizorSamsung implements Telewizor {
             numerKanalu = numer;
         }
     }
+
+    @Override
+    public void akcjaZasilania() {
+if(stanWlaczony) {
+    wylacz();
+} else wlacz();
+    }
+
 }

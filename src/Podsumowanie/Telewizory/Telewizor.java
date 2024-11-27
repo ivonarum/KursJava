@@ -6,5 +6,7 @@ public interface Telewizor {
 
     void wylacz();
 
+    void akcjaZasilania();
+
     void przelaczProgram(int numer);
 }
